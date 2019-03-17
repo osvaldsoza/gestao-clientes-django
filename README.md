@@ -1,5 +1,5 @@
 # Gestão Clientes com Python e Django
-Tecnológias:
+Tecnologias:
 Django;
 Python 3;
 Bootstrap;
