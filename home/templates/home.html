@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Home</h1>
-<h3>Acesso a aplicação: user: userguest password:guest123456</h3>
+<h3>Username: userguest <br /> Password:guest123456</h3>
 {% if user.is_authenticated %}
 <p>Usuário: {{user.username}}</p>
 <a href="{% url 'logout' %}">Sair</a>
