@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>
+    {% if user.is_authenticated %}
+    Usuário: {{ user.username }}
+    <h3><a href="{% url 'logout' %}">Sair</a></h3>
+    {% endif %}
+</h2>
+<ul>
+    {% for person in persons %}
+    <li>{{person.first_name}} {{person.last_name}} -
+        <a href="{% url 'person_update' person.id%}">Atualizar</a> -
+        <a href="{% url 'person_delete' person.id %}">Excluir</a></li>
+    {% endfor %}
+</ul>
+<a href="{% url 'person_new' %}">Novo Cliente</a>
+<a href="{% url 'home' %}">Home</a>
+</body>
+</html>
+
+
