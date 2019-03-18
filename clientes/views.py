@@ -10,7 +10,7 @@ from .models import Person
 @login_required
 def person_list(request):
     persons = Person.objects.all()
-    return render(request, 'pessoa.html', {'persons': persons})
+    return render(request, 'person.html', {'persons': persons})
 
 
 @login_required

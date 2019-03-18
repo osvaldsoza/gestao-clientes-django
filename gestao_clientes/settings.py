@@ -26,8 +26,8 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-#https://django-gestao-cli.herokuapp.com/ | https://git.heroku.com/django-gestao-cli.git
-ALLOWED_HOSTS = ['django-gestao-cli.herokuapp.com']
+
+ALLOWED_HOSTS = ['django-gestao-cli.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
@@ -122,3 +122,7 @@ LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = 'person_list'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = [
+    'resources'
+]
