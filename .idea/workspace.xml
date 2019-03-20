@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="522e7001-f6e4-4ef6-989c-52cab92a671b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/clientes/templates/person_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/clientes/templates/person_confirm_delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientes/templates/person_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/clientes/templates/person_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements-dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements-dev.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,13 +26,13 @@
           <entry key="html" value="13" />
           <entry key="py" value="22" />
           <entry key="sqlite3" value="1" />
-          <entry key="txt" value="4" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="13" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="PLAIN_TEXT" value="10" />
           <entry key="Python" value="22" />
         </counts>
       </usages-collector>
@@ -44,15 +41,15 @@
           <entry key="Procfile" value="22" />
           <entry key="env" value="11" />
           <entry key="gitignore" value="32" />
-          <entry key="html" value="2687" />
+          <entry key="html" value="2694" />
           <entry key="py" value="1204" />
-          <entry key="txt" value="34" />
+          <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2687" />
-          <entry key="PLAIN_TEXT" value="99" />
+          <entry key="HTML" value="2694" />
+          <entry key="PLAIN_TEXT" value="103" />
           <entry key="Python" value="1204" />
         </counts>
       </usages-collector>
@@ -60,14 +57,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clientes/templates/person_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="90">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements-dev.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -160,13 +166,13 @@
         <option value="$PROJECT_DIR$/clientes/views.py" />
         <option value="$PROJECT_DIR$/clientes/forms.py" />
         <option value="$PROJECT_DIR$/gestao_clientes/settings.py" />
-        <option value="$PROJECT_DIR$/requirements-dev.txt" />
         <option value="$PROJECT_DIR$/templates/users/login.html" />
         <option value="$PROJECT_DIR$/clientes/templates/person.html" />
         <option value="$PROJECT_DIR$/home/templates/home.html" />
         <option value="$PROJECT_DIR$/clientes/templates/person_confirm_delete.html" />
         <option value="$PROJECT_DIR$/templates/layout_base.html" />
         <option value="$PROJECT_DIR$/clientes/templates/person_form.html" />
+        <option value="$PROJECT_DIR$/requirements-dev.txt" />
       </list>
     </option>
   </component>
@@ -380,13 +386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements-dev.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gestao_clientes/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
@@ -445,11 +444,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clientes/templates/person_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="90">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements-dev.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
         </state>
       </provider>
     </entry>
