@@ -2,11 +2,20 @@
 {% load bootstrap %}
 
 {% block main %}
-<h1>Cadastro</h1>
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token%}
-    {{form | bootstrap}}
-    <button type="submit" class="btn btn-primary">Salvar</button>
-    <a href="{% url 'person_list' %}" class="btn btn-dark">Lista</a>
-</form>
+
+<h3 style="margin-top:20px;">Novo Cliente</h3>
+<div class="row">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm" -4>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token%}
+            {{form | bootstrap}}
+            <button type="submit" class="btn btn-outline-dark">Salvar</button>
+        </form>
+    </div>
+    <div class="col-sm-4">
+    </div>
+</div>
+
 {% endblock%}

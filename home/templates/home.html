@@ -3,12 +3,11 @@
 
 {% block main %}
 
-<h1>Gestão de Clientes</h1>
-<h6 class="text text-info">Username: userguest <br/> Password:guest123456</h6>
+<h1 style="margin-top:20px;">Seja Bem vindo!!!</h1>
 {% if user.is_authenticated %}
-<p class="text text-success">Usuário logado: {{user.username}}</p>
-<a href="{% url 'logout' %}" class="btn btn-dark">Sair</a>
+
 {% else %}
+<h6 class="text text-info">Username: userguest <br/> Password:guest123456</h6>
 <a href="{% url 'login' %}" class="btn btn-dark">Logar</a>
 {% endif %}
 

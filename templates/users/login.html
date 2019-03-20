@@ -1,15 +1,23 @@
 {% extends 'layout_base.html' %}
+{% load bootstrap %}
 
 {% block title%}
- Login
+Login
 {% endblock%}
 
 {% block main %}
-<h2>Login</h2>
-<form method="post">
-    {% csrf_token%}
-    {{form.as_p}}
-    <button type="submit" class="btn btn-dark">Logar</button>
-</form>
-{%endblock%}
+<div class="row">
+    <div class="col-sm-4"></div>
 
+    <div class="col-sm-4">
+        <h2>Login</h2>
+        <form method="post">
+            {% csrf_token%}
+            {{form | bootstrap}}
+            <button type="submit" class="btn btn-dark">Logar</button>
+        </form>
+    </div>
+
+    <div class="col-sm-4"></div>
+</div>
+{%endblock%}
