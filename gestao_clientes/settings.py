@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 
-ALLOWED_HOSTS = ['django-gestao-cli.herokuapp.com']
+ALLOWED_HOSTS = ['django-gestao-cli.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
