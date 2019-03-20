@@ -26,7 +26,7 @@
             </ul>
         </div>
         <form class="form-inline">
-            <label class="form-control mr-sm-2"> {% if user.is_authenticated %}
+            <label class="mr-sm-2"> {% if user.is_authenticated %}
                 Usuário: {{ user.username }}
                 {% endif %}</label>
             <a class="btn btn-outline-dark my-2 my-sm-0" href="{% url 'logout' %}">Sair</a>

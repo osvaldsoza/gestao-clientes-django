@@ -1,15 +1,27 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'bootstrap-4.0.0/dist/css/bootstrap.min.css' %}">
     <title>Title</title>
 </head>
 <body>
-<h1>Ten certeza que deseja excluir {{person.first_name}} ? </h1>
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token%}
-    <button type="submit">Sim</button>
-    <a href="{% url 'person_list' %}">Não</a>
-</form>
+<div class="container" style="margin-top:20px; width:50vw;">
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>
+            Alerta!
+        </strong>
+            Tem certeza que deseja excluir o cliente {{person.first_name}} ?
+            <a class="close" data-dismiss="alert" aria-label="Close" href="{% url 'person_list' %}"><span
+                    aria-hidden="true">&times;</span></a>
+    </div>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token%}
+        <button type="submit" class="btn btn-outline-danger">Sim</button>
+    </form>
+</div>
 </body>
 </html>
