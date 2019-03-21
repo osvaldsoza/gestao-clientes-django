@@ -1,5 +1,6 @@
 {% extends 'layout_base.html' %}
 
+
 {% block title%}
 Lista
 {% endblock%}
@@ -13,9 +14,14 @@ Lista
         <ul class="list-group" style="margin-top:20px; margin-bottom:20px;">
             {% for person in persons %}
             <li class="list-group-item"> {{person.first_name}} {{person.last_name}}
-                <a href="{% url 'person_update' person.id%}" class="btn btn-warning">Atualizar</a>
-                <a href="{% url 'person_delete' person.id %}" class="btn btn-info btn-lg"><span
-                        class="glyphicon glyphicon-crash"></span></a>
+                <a href="{% url 'person_delete' person.id %}">
+                    <img src="{% static 'img/trash.png'%}" style="float: right;" data-toggle="tooltip"
+                         title="Excluir">
+                </a>
+                <a href="{% url 'person_update' person.id%}">
+                    <img src="{% static 'img/edit.png'%}" style="float: right;" data-toggle="tooltip"
+                         title="Editar">
+                </a>
             </li>
             {% endfor %}
         </ul>
